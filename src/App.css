@@ -29,14 +29,10 @@
 }
 
 .list {
-  display: flex;
-  height: 1700px;
-  flex-wrap: wrap;
-  flex-direction: column;
+  column-count: 3;
 }
 
 .images {
-  object-fit: contain;
-  width: 32%;
-  margin: 4px;
+  width: 100%;
+  margin: 5px;
 }

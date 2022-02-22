@@ -4,18 +4,24 @@ import Toolbar from './Toolbar'
 
 export default function Portfolio(props) {
   const [image, setImage] = useState('All');
-  let currentProject = null;
+  let currentCategory = null;
+
+  function setFilter(filter) {
+    return setImage(filter)
+  }
   if (image === 'All') {
-    currentProject = props.props.map(el => el.img)
+    currentCategory = props.props.map(el => el.img)
   } else {
-    currentProject = props.props.filter(el => console.log(el.category))
+    currentCategory = props.props.filter(el => image === el.category)
+    currentCategory = currentCategory.map(el => el.img)
   }
 
-  console.log(currentProject);
   return (
     <>
-      <Toolbar filters={["All", "Websites", "Flayers", "Business Cards"]} selected={image} onSelectFilter={filter => console.log(filter)}/>
-      <ProjectList projects={currentProject}/>
+      <Toolbar  filters={["All", "Websites", "Flayers", "Business Cards"]}
+                selected={image}
+                onSelectFilter={filter => setFilter(filter.textContent)}/>
+      <ProjectList projects={currentCategory}/>
     </>
   )
 }
