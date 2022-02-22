@@ -1,9 +1,10 @@
-// import React from 'react';
 import './App.css';
+import Portfolio from './components/Portfolio';
+import data from './ImageStore';
 
 function App() {
-    return ( 
-    <p> Hello world! </p>
+    return (
+        <Portfolio props={data}/>
     );
 }
 
