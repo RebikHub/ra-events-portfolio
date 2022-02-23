@@ -12,8 +12,7 @@ export default function Portfolio(props) {
   if (image === 'All') {
     currentCategory = props.props.map(el => el.img)
   } else {
-    currentCategory = props.props.filter(el => image === el.category)
-    currentCategory = currentCategory.map(el => el.img)
+    currentCategory = props.props.filter(el => image === el.category).map(el => el.img)
   }
 
   return (
