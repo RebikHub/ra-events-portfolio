@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ra-events-portfolio/static/css/main.5d0863ab.css",
+    "main.js": "/ra-events-portfolio/static/js/main.bb9c6040.js",
+    "index.html": "/ra-events-portfolio/index.html",
+    "main.5d0863ab.css.map": "/ra-events-portfolio/static/css/main.5d0863ab.css.map",
+    "main.bb9c6040.js.map": "/ra-events-portfolio/static/js/main.bb9c6040.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d0863ab.css",
+    "static/js/main.bb9c6040.js"
+  ]
+}
