@@ -1,5 +1,5 @@
 
-
+[![Build status](https://ci.appveyor.com/api/projects/status/hb7p15njnbwla94u/branch/master?svg=true)](https://ci.appveyor.com/project/RebikHub/ra-events-portfolio/branch/master)
 
 [Портфолио с фильтрами](https://rebikhub.github.io/ra-events-portfolio/)
 ===
